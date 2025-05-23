@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width: 52px;
+    height: 52px;
+    background-color: @color-aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Permanent Marker';
+    border: 2px solid #000;
+    border-bottom: 5px solid #000;
+    border-radius: 7px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__socials {
+    display: flex;
+    gap: 22px;
+    img {
+      max-width: 24px;
+      max-height: 24px;
+      object-fit: cover;
+    }
+  }
+  &__burger {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    div {
+      display: flex;
+      height: 24px;
+      width: 24px;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      span {
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+      }
+    }
+  }
+}

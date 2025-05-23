@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 19px;
+  background-color: @color-violet;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+  }
+  &__title {
+    color: white;
+    font-size: 70px;
+    font-family: Permanent Marker;
+    font-weight: 400;
+    line-height: 75.5px;
+    letter-spacing: 2px;
+  }
+  &__descr {
+    width: 420px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.45px;
+  }
+  &__btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+  }
+  &__download {
+    display: flex;
+    align-items: center;
+    padding: 10px 31px;
+    gap: 9px;
+    color: #1c1c1d;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.45px;
+    border: 2px solid #000;
+    border-bottom: 5px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: @color-aqua;
+    }
+  }
+}
