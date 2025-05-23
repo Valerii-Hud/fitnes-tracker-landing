@@ -1,0 +1,90 @@
+.about {
+  padding-top: 80px;
+  overflow: hidden;
+  .slick-slide {
+    margin: 0 30px;
+  }
+  .slick-list {
+    margin: 0 -30px;
+  }
+  .slick-dots {
+    margin-top: 50px;
+
+    padding: 0px;
+    list-style-type: none;
+    display: flex !important;
+    gap: 15px !important;
+  }
+  &__dots {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+  }
+
+  &__dot {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 9999px;
+    border: 2px solid #1c1c1d;
+    transition: background 0.3s;
+    cursor: pointer;
+    padding: 0;
+    border: 2px solid #1c1c1d;
+  }
+
+  &__dots li.slick-active .about__dot {
+    background: #ffbd12;
+  }
+
+  &__descr {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: #474a57;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.45px;
+  }
+  &__slider {
+    padding-top: 60px;
+  }
+  &__item {
+    padding: 25px 37px;
+    border: 2px solid #000;
+    border-bottom: 5px solid #000;
+    border-radius: 10px;
+    &-wrapper {
+      display: flex;
+      gap: 20px;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    &-text {
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+    &:nth-child(1n) {
+      background-color: @color-pink;
+    }
+    &:nth-child(2n) {
+      background-color: @color-yellow;
+    }
+    &:nth-child(3n) {
+      background-color: @color-orange;
+    }
+    &:nth-child(4n) {
+      background-color: @color-aqua;
+    }
+    &:nth-child(5n) {
+      background-color: @color-violet;
+    }
+  }
+}
