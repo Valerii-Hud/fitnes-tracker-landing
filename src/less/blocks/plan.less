@@ -1,0 +1,124 @@
+.plan {
+  padding-top: 200px;
+  &__subtitle {
+    text-align: center;
+    color: #474a57;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.17px;
+    letter-spacing: 0.5px;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 15px;
+  }
+  &__divider {
+    height: 100%;
+    width: 2px;
+    background-color: #000;
+  }
+  &__tabs {
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 281px;
+    height: 60px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    z-index: 20;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.62px;
+    word-wrap: break-word;
+  }
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.5s ease;
+    &_active {
+      background-color: @color-aqua;
+    }
+  }
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    &_active {
+      display: flex;
+    }
+  }
+  &__item {
+    padding: 30px 30px 40px 30px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    border-bottom: 5px solid #000;
+    &:nth-child(1n) {
+      background-color: @color-orange;
+    }
+    &:nth-child(2n) {
+      background-color: @color-aqua;
+    }
+    &:nth-child(3n) {
+      background-color: @color-violet;
+    }
+    &:nth-child(4n) {
+      background-color: @color-yellow;
+    }
+  }
+  &__name {
+    color: #1c1c1d;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.17px;
+    letter-spacing: 0.5px;
+  }
+  &__price {
+    color: #1c1c1d;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.45px;
+  }
+  &__info {
+    padding: 0;
+    li {
+      list-style-type: none;
+      color: #1c1c1d;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26.17px;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__start {
+    width: 220px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    border: 2px #1c1c1d solid;
+    border-bottom: 5px #1c1c1d solid;
+    width: 172.22px;
+    text-align: center;
+    color: #1c1c1d;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.45px;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
