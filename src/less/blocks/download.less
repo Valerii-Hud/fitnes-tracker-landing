@@ -1,0 +1,133 @@
+.download {
+  padding-top: 200px;
+  &__title {
+    text-align: left;
+  }
+  &__descr {
+    width: 399px;
+    color: #474a57;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.45px;
+  }
+  &__btns {
+    display: flex;
+    gap: 30px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 189px;
+    height: 46.84px;
+    background: @color-orange;
+    border-radius: 10px;
+    border: 2px #1c1c1d solid;
+    border-bottom: 5px #1c1c1d solid;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.45px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #000;
+    }
+  }
+  &__info {
+    width: 600px;
+  }
+  &__form {
+    padding: 40px;
+    border: 2px solid #000;
+    border-bottom: 5px solid #000;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top {
+    display: flex;
+    gap: 20px;
+  }
+  &__authorization {
+    color: #1c1c1d;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.62px;
+    cursor: pointer;
+    &_active {
+      color: @color-orange;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0.62px;
+    }
+  }
+  &__inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__input {
+    width: 400px;
+    height: 50px;
+    color: #1c1c1d;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.17px;
+    letter-spacing: 0.5px;
+    border: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 10px;
+    padding: 12px 20px;
+  }
+
+  &__accept {
+    margin-top: 20px;
+    color: #474a57;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.17px;
+    letter-spacing: 0.5px;
+  }
+  &__checkbox {
+    display: flex;
+    gap: 10px;
+    color: #474a57;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.17px;
+    letter-spacing: 0.5px;
+    span {
+      margin-top: 15px;
+    }
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__submit {
+    margin-top: 30px;
+    height: 50px;
+    background: @color-orange;
+    border-radius: 10px;
+    border: 2px #1c1c1d solid;
+    border-bottom: 5px #1c1c1d solid;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.45px;
+    transition: all 0.5s ease;
+    &:hover {
+      background: #000;
+    }
+  }
+}
