@@ -60,3 +60,44 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    overflow: hidden;
+    &__wrapper {
+      justify-content: space-around;
+    }
+    &__btns {
+      width: 150px;
+      flex-direction: column;
+      gap: 5px;
+    }
+    &__btn {
+      img {
+        display: none;
+      }
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    &__logo {
+      display: none;
+    }
+    &__links {
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__link {
+      font-size: 18px;
+    }
+  }
+}
