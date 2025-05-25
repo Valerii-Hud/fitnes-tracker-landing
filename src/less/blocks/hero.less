@@ -55,3 +55,32 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .hero {
+    &__phone {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero {
+    &__descr {
+      width: 100%;
+    }
+    &__btns {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+}
