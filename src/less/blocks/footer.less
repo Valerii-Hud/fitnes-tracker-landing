@@ -1,0 +1,62 @@
+.footer {
+  background-color: @color-violet;
+  padding: 42px 120px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 52px;
+    height: 52px;
+    background-color: @color-aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Permanent Marker';
+    border: 1px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 7px;
+  }
+  &__btns {
+    display: flex;
+    gap: 30px;
+  }
+  &__links {
+    display: flex;
+    gap: 34px;
+  }
+  &__link {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 189px;
+    height: 46.84px;
+    background: @color-yellow;
+    border-radius: 10px;
+    border: 2px #1c1c1d solid;
+    border-bottom: 5px #1c1c1d solid;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.45px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #000;
+    }
+  }
+}

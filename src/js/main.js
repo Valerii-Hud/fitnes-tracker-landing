@@ -1,3 +1,6 @@
+import 'https://code.jquery.com/jquery-1.11.0.min.js';
+import 'https://code.jquery.com/jquery-migrate-1.2.1.min.js';
+import '/src/js/slick.min.js';
 import '/src/less/main.less';
 
 $(document).ready(function () {
@@ -15,7 +18,6 @@ $(document).ready(function () {
     },
   });
 
-  // Логика табов
   const tabs = document.querySelectorAll('.plan__tab');
   const contents = document.querySelectorAll('.plan__content');
 
@@ -23,11 +25,9 @@ $(document).ready(function () {
     tab.addEventListener('click', () => {
       const target = tab.getAttribute('data-tab');
 
-      // Удаляем активные классы
       tabs.forEach((t) => t.classList.remove('plan__tab_active'));
       contents.forEach((c) => c.classList.remove('plan__content_active'));
 
-      // Добавляем активные классы для выбранных
       tab.classList.add('plan__tab_active');
       document.getElementById(target).classList.add('plan__content_active');
     });
