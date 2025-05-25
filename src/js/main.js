@@ -16,6 +16,32 @@ $(document).ready(function () {
     customPaging: function (slider, i) {
       return '<button class="about__dot"></button>';
     },
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   const tabs = document.querySelectorAll('.plan__tab');
