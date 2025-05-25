@@ -41,3 +41,40 @@
     letter-spacing: 0.5px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .story {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .story {
+    &__item {
+      width: 100%;
+    }
+    &__img {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__descr {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .story {
+    &__img {
+      padding: 50px 100px;
+    }
+  }
+}
